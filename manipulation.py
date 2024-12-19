@@ -7,8 +7,11 @@ length_str = len(str_manip)
 print("Your sentence string length is:", length_str)
 
 # Accessing the last letter in the input sentence and replacing it with @ symbol
-str_manip = str_manip[:-1] + '@'
-print("Edited sentence:", str_manip)
+new_char = '@'
+if str_manip:
+    minus_ind = str_manip[-1]
+    edit_str = str_manip.replace(minus_ind, new_char)
+print("Edited sentence: ", edit_str)
 
 # Outputing last three characters backwards 
 backwards_str = str_manip[-1:-4:-1]

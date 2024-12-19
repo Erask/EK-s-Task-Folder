@@ -8,4 +8,4 @@ for i in range(1, 2 * rows):
         print('*' * i)
     else:
         #print bottom side
-        print('*' * (2* rows - i))
+        print('*' * ((2* rows) - i))
